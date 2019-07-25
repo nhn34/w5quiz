@@ -24,7 +24,9 @@ a{
     grid-template-columns: 10px auto 10px;
     grid-template-areas: ". content .";
 
-
+    @include lg {
+        grid-template-columns: 30px auto 30px;
+    }
 
     .content{
         grid-area: content;

@@ -329,6 +329,9 @@ a {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". content ."; }
+  @media (min-width: 992px) {
+    .grid {
+      grid-template-columns: 30px auto 30px; } }
   .grid .content {
     grid-area: content; }
 
@@ -377,23 +380,46 @@ textarea {
     Footer
 ============= */
 footer {
-  background-color: #080808;
-  padding: 45px 0; }
-  footer p {
-    font-family: 'Comfortaa', cursive;
-    font-size: 0.6875rem;
-    color: #fff;
-    text-align: center;
-    padding-top: 24px; }
-    footer p span {
-      color: #E1593C; }
+  background-color: #080808; }
   footer div {
-    display: flex;
-    justify-content: center; }
-    footer div i {
-      font-size: 1.75rem;
-      padding: 0 10px;
-      color: #6B6B6B; }
+    padding: 45px 0; }
+    @media (min-width: 992px) {
+      footer div {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "social text"; } }
+    @media (min-width: 1200px) {
+      footer div {
+        display: grid;
+        grid-template-columns: auto repeat(2, 600px) auto;
+        grid-template-areas: ". social text ."; } }
+    footer div p {
+      font-family: 'Comfortaa', cursive;
+      font-size: 0.6875rem;
+      color: #fff;
+      text-align: center;
+      padding-top: 24px; }
+      @media (min-width: 992px) {
+        footer div p {
+          grid-area: text;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding-top: 0; } }
+      footer div p span {
+        color: #E1593C; }
+    footer div div {
+      display: flex;
+      justify-content: center; }
+      @media (min-width: 992px) {
+        footer div div {
+          grid-area: social;
+          justify-content: flex-start;
+          align-items: center; } }
+      footer div div i {
+        font-size: 1.75rem;
+        padding: 0 10px;
+        color: #6B6B6B; }
 
 /* =============
     Hero
@@ -408,6 +434,12 @@ footer {
     @media (min-width: 768px) {
       #hero div {
         padding: 125px 0 194px; } }
+    @media (min-width: 992px) {
+      #hero div {
+        padding: 134px 0 176px; } }
+    @media (min-width: 1200px) {
+      #hero div {
+        padding: 168px 0 223px; } }
     #hero div h1 {
       font-family: 'Comfortaa', cursive;
       color: #1A4B58;
@@ -416,6 +448,10 @@ footer {
         #hero div h1 {
           font-size: 2.375rem;
           padding-bottom: 24px; } }
+      @media (min-width: 992px) {
+        #hero div h1 {
+          font-size: 3.75rem;
+          padding-bottom: 37px; } }
     #hero div h2 {
       font-family: 'Comfortaa', cursive;
       color: #338595;
@@ -424,6 +460,14 @@ footer {
         #hero div h2 {
           font-size: 1.5625rem;
           padding: 0 90px; } }
+      @media (min-width: 992px) {
+        #hero div h2 {
+          font-size: 2rem;
+          padding: 0 160px; } }
+      @media (min-width: 1200px) {
+        #hero div h2 {
+          font-size: 2rem;
+          padding: 0 300px; } }
   #hero article {
     padding-bottom: 178px;
     display: flex;
@@ -431,6 +475,12 @@ footer {
     @media (min-width: 768px) {
       #hero article {
         padding-bottom: 147px; } }
+    @media (min-width: 992px) {
+      #hero article {
+        padding-bottom: 165px; } }
+    @media (min-width: 1200px) {
+      #hero article {
+        padding-bottom: 197px; } }
     #hero article a {
       font-family: 'Comfortaa', cursive;
       display: inline-block;
@@ -443,6 +493,11 @@ footer {
         #hero article a {
           font-size: 1.4375rem;
           padding: 40px 20px;
+          border-radius: 100px; } }
+      @media (min-width: 992px) {
+        #hero article a {
+          font-size: 2rem;
+          padding: 52px 20px;
           border-radius: 100px; } }
 
 /* =============
@@ -457,20 +512,45 @@ footer {
       grid-template-columns: 65% auto;
       grid-template-areas: "text img";
       padding: 0 0; } }
+  @media (min-width: 992px) {
+    #creative {
+      grid-template-columns: 50% auto;
+      grid-template-areas: "img text";
+      padding: 0 0; } }
+  @media (min-width: 1200px) {
+    #creative {
+      grid-template-columns: auto 600px 600px auto;
+      grid-template-areas: ". img text .";
+      padding: 0 0; } }
   @media (min-width: 768px) {
     #creative div:nth-child(1) {
       grid-area: text;
-      padding: 30px 45px; } }
+      display: grid;
+      grid-template-columns: 30px auto 30px;
+      grid-template-areas: ". type .";
+      padding: 45px 0; } }
+  @media (min-width: 992px) {
+    #creative div:nth-child(1) {
+      grid-template-columns: 130px auto 130px;
+      grid-template-areas: ". type .";
+      padding: 100px 0; } }
+  #creative div:nth-child(1) article {
+    grid-area: type; }
   @media (min-width: 768px) {
     #creative div:nth-child(2) {
       grid-area: img;
       background-image: url("../img/creative.jpg");
-      background-position: center; } }
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; } }
   #creative h1 {
     padding-bottom: 20px; }
   #creative p {
     line-height: 21px;
     text-align: justify; }
+    @media (min-width: 992px) {
+      #creative p {
+        line-height: 30px; } }
 
 #creativehero {
   background-image: url("../img/creative.jpg");
@@ -487,15 +567,29 @@ footer {
   padding-bottom: 20px; }
   @media (min-width: 768px) {
     #journal h1 {
-      grid-area: h1; } }
+      grid-area: h1;
+      padding-bottom: 0; } }
 
 @media (min-width: 768px) {
   #journal div {
     padding: 0 64px;
     display: grid;
-    grid-template-columns: repeat 4, 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
     grid-template-areas: "h1 h1 h1 h1" "mock1 mock1 mock2 mock2" ". mock3 mock3 ."; } }
+
+@media (min-width: 992px) {
+  #journal div {
+    padding: 0 0 50px 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    grid-template-areas: "h1 h1 h1" "mock1 mock2 mock3"; } }
+
+@media (min-width: 1200px) {
+  #journal div {
+    grid-template-columns: auto repeat(3, 360px) auto;
+    grid-gap: 30px;
+    grid-template-areas: ". h1 h1 h1 ." ". mock1 mock2 mock3 ."; } }
 
 #journal div section {
   background-color: #EEEEEE;
@@ -506,12 +600,18 @@ footer {
   @media (min-width: 768px) {
     #journal div section {
       margin-bottom: 0; } }
+  @media (min-width: 1200px) {
+    #journal div section {
+      display: block; } }
   #journal div section div {
     grid-area: bg; }
   #journal div section h2 {
     padding-top: 25px; }
   #journal div section article {
     grid-area: text; }
+    @media (min-width: 992px) {
+      #journal div section article {
+        padding: 0 20px; } }
     #journal div section article p:nth-child(2) {
       padding: 30px 0 25px; }
     #journal div section article p:nth-child(3) {
@@ -527,6 +627,9 @@ footer {
   background-size: cover;
   background-position: center;
   height: 200px; }
+  @media (min-width: 1200px) {
+    #journal div section:nth-child(2) div {
+      grid-area: bg; } }
 
 #journal div section:nth-child(2) h2 {
   padding: 25px 30px 0; }
@@ -545,6 +648,10 @@ footer {
   #journal div section:nth-child(4) {
     grid-area: mock3;
     margin-bottom: 40px; } }
+
+@media (min-width: 992px) {
+  #journal div section:nth-child(4) {
+    margin-bottom: 0; } }
 
 #journal div section:nth-child(4) div {
   background-image: url("../img/card.jpg");

@@ -6,6 +6,7 @@
     background-color: $grey;
     padding: 55px 0 100px;
 
+
     @include md {
         display: grid;
         grid-template-columns: 65% auto;
@@ -13,10 +14,43 @@
         padding: 0 0;
     }
 
+    @include lg {
+        grid-template-columns: 50% auto;
+        grid-template-areas: "img text";
+        padding: 0 0;
+
+    }
+
+    @include xl {
+        grid-template-columns: auto 600px 600px auto;
+        grid-template-areas: ". img text .";
+        padding: 0 0;
+    }
+
     div:nth-child(1) {
         @include md {
             grid-area: text;
-            padding: 30px 45px;
+            display: grid;
+            grid-template-columns: 30px auto 30px;
+            grid-template-areas:
+            ". type .";
+            padding: 45px 0;
+        }
+
+        @include lg {
+
+            grid-template-columns: 130px auto 130px;
+            grid-template-areas:
+            ". type .";
+            padding: 100px 0;
+
+        }
+
+        article {
+            grid-area: type;
+
+
+
         }
     }
 
@@ -25,7 +59,10 @@
             grid-area: img;
             background-image: url("../img/creative.jpg");
             background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
+
     }
 
     h1 {
@@ -34,6 +71,9 @@
     p {
         line-height: 21px;
         text-align: justify;
+        @include lg {
+            line-height: 30px;
+        }
     }
 }
 

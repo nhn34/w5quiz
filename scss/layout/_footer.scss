@@ -3,7 +3,21 @@
 ============= */
 footer{
     background-color: $charcoal;
+    div {
+
     padding: 45px 0;
+
+    @include lg {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "social text";
+    }
+
+    @include xl {
+        display: grid;
+        grid-template-columns: auto repeat(2,600px) auto;
+        grid-template-areas: ". social text .";
+    }
 
     p {
         font-family: 'Comfortaa', cursive;
@@ -11,6 +25,14 @@ footer{
         color: $white;
         text-align: center;
         padding-top: 24px;
+        @include lg {
+            grid-area: text;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-top: 0;
+        }
+
         span {
             color: $red;
         }
@@ -20,10 +42,18 @@ footer{
         display: flex;
         justify-content: center;
 
+        @include lg {
+            grid-area: social;
+            justify-content: flex-start;
+            align-items: center;
+
+        }
+
         i {
             font-size: rem-calc(28);
             padding: 0 10px;
             color: $social;
         }
     }
+}
 }

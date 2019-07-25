@@ -6,7 +6,9 @@
     h1 {
         padding-bottom: 20px;
         @include md {
-            grid-area: h1;        }
+            grid-area: h1;
+            padding-bottom: 0;
+         }
     }
 
     div {
@@ -14,13 +16,31 @@
         @include md {
             padding: 0 64px;
             display: grid;
-            grid-template-columns: repeat (4, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             grid-gap: 40px;
             grid-template-areas:
             "h1 h1 h1 h1"
             "mock1 mock1 mock2 mock2"
             ". mock3 mock3 .";
         }
+        @include lg {
+            padding: 0 0 50px 0;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+            grid-template-areas:
+            "h1 h1 h1"
+            "mock1 mock2 mock3";
+
+        }
+        @include xl {
+            grid-template-columns: auto repeat(3, 360px) auto;
+            grid-gap: 30px;
+            grid-template-areas:
+            ". h1 h1 h1 ."
+            ". mock1 mock2 mock3 .";
+
+        }
+
         section {
             background-color: $grey;
             margin-bottom: 20px;
@@ -33,6 +53,10 @@
             @include md {
                 margin-bottom: 0;
 
+            }
+
+            @include xl {
+                display: block;
             }
 
             div {
@@ -48,6 +72,10 @@
 
             article {
                 grid-area: text;
+
+                @include lg {
+                    padding: 0 20px;
+                }
             p:nth-child(2) {
                 padding: 30px 0 25px;
             }
@@ -64,11 +92,18 @@
             @include md {
                 grid-area: mock1;
             }
+
+
             div {
             background-image: url("../img/hanging.jpg");
             background-size: cover;
             background-position: center;
             height: 200px;
+
+            @include xl {
+                grid-area: bg;
+            }
+
         }
         h2 {
             padding: 25px 30px 0;
@@ -91,6 +126,10 @@
         @include md {
             grid-area: mock3;
             margin-bottom: 40px;
+        }
+
+        @include lg {
+            margin-bottom: 0;
         }
         div {
         background-image: url("../img/card.jpg");
