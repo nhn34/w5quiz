@@ -261,6 +261,45 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/scss/sections/_creative.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/sections/_creative.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/sections/_hero.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/sections/_hero.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/sections/_journal.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/sections/_journal.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,

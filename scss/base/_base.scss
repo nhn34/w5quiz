@@ -21,12 +21,10 @@ a{
 
 .grid{
     display: grid;
-    grid-template-columns: 15px auto 15px;
+    grid-template-columns: 10px auto 10px;
     grid-template-areas: ". content .";
 
-    @include sm {
-        grid-template-columns: 30px auto 30px;
-    }
+
 
     .content{
         grid-area: content;
@@ -34,8 +32,6 @@ a{
 }
 
 .space {
-    padding: 60px 0;
-    @include lg {
-        padding: 90px 0;
-    }
+    padding: 55px 0 0;
+
 }

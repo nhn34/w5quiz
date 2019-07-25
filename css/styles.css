@@ -327,25 +327,27 @@ a {
 
 .grid {
   display: grid;
-  grid-template-columns: 15px auto 15px;
+  grid-template-columns: 10px auto 10px;
   grid-template-areas: ". content ."; }
-  @media (min-width: 576px) {
-    .grid {
-      grid-template-columns: 30px auto 30px; } }
   .grid .content {
     grid-area: content; }
 
 .space {
-  padding: 60px 0; }
-  @media (min-width: 992px) {
-    .space {
-      padding: 90px 0; } }
+  padding: 55px 0 0; }
 
 /* =============
     Typography
 ============= */
 body {
   font-family: 'Lato', sans-serif; }
+  body h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.1875rem;
+    text-align: center; }
+  body h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-align: center; }
 
 /* =============
     Buttons
@@ -374,3 +376,114 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #080808;
+  padding: 45px 0; }
+  footer p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 0.6875rem;
+    color: #fff;
+    text-align: center;
+    padding-top: 24px; }
+    footer p span {
+      color: #E1593C; }
+  footer div {
+    display: flex;
+    justify-content: center; }
+    footer div i {
+      font-size: 1.75rem;
+      padding: 0 10px;
+      color: #6B6B6B; }
+
+/* =============
+    Hero
+============= */
+#hero {
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center; }
+  #hero div {
+    padding: 74px 0 166px;
+    text-align: center; }
+    #hero div h1 {
+      font-family: 'Comfortaa', cursive;
+      color: #1A4B58;
+      font-size: 1.5rem; }
+    #hero div h2 {
+      font-family: 'Comfortaa', cursive;
+      color: #338595;
+      font-size: 0.875rem; }
+  #hero article {
+    padding-bottom: 178px;
+    display: flex;
+    justify-content: center; }
+    #hero article a {
+      font-family: 'Comfortaa', cursive;
+      display: inline-block;
+      font-size: 1.1375rem;
+      color: #fff;
+      border: 2.8px solid #fff;
+      padding: 30px 10px;
+      border-radius: 100px; }
+
+/* =============
+    Creative
+============= */
+#creative {
+  background-color: #EEEEEE;
+  padding-bottom: 100px; }
+  #creative h1 {
+    padding-bottom: 20px; }
+  #creative p {
+    line-height: 21px;
+    text-align: justify; }
+
+#creativehero {
+  background-image: url(../img/creative.jpg);
+  background-size: cover;
+  height: 320px; }
+
+/* =============
+    Journal
+============= */
+#journal h1 {
+  padding-bottom: 20px; }
+
+#journal div section {
+  background-color: #EEEEEE;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  grid-template-areas: "bg bg bg" ". text ."; }
+  #journal div section div {
+    grid-area: bg; }
+  #journal div section h2 {
+    padding-top: 25px; }
+  #journal div section article {
+    grid-area: text; }
+    #journal div section article p:nth-child(2) {
+      padding: 30px 0 25px; }
+    #journal div section article p:nth-child(3) {
+      font-weight: 700;
+      padding-bottom: 30px; }
+
+#journal div section:nth-child(2) div {
+  background-image: url("../img/hanging.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px; }
+
+#journal div section:nth-child(2) h2 {
+  padding: 25px 30px 0; }
+
+#journal div section:nth-child(3) div {
+  background-image: url("../img/bcard.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px; }
+
+#journal div section:nth-child(4) div {
+  background-image: url("../img/card.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px; }

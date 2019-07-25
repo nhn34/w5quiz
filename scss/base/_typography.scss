@@ -3,4 +3,19 @@
 ============= */
 body{
     font-family: 'Lato', sans-serif;
+    // font-family: 'Montserrat', sans-serif;
+    // font-family: 'Comfortaa', cursive;
+
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: rem-calc(35);
+        text-align: center;
+
+    }
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: rem-calc(24);
+        text-align: center;
+    }
 }

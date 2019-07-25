@@ -1,0 +1,74 @@
+/* =============
+    Journal
+============= */
+
+#journal {
+    h1 {
+        padding-bottom: 20px;
+    }
+
+    div {
+        section {
+            background-color: $grey;
+            margin-bottom: 20px;
+            display: grid;
+            grid-template-columns: 20px auto 20px;
+            grid-template-areas:
+            "bg bg bg"
+            ". text .";
+
+            div {
+                grid-area: bg;
+            }
+
+
+            h2 {
+                padding-top: 25px;
+            }
+
+
+
+            article {
+                grid-area: text;
+            p:nth-child(2) {
+                padding: 30px 0 25px;
+            }
+            p:nth-child(3) {
+                font-weight: 700;
+                padding-bottom: 30px;
+            }
+        }
+
+        }
+
+        section:nth-child(2){
+            div {
+            background-image: url("../img/hanging.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+        }
+        h2 {
+            padding: 25px 30px 0;
+        }
+        }
+
+        section:nth-child(3){
+            div {
+            background-image: url("../img/bcard.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+        }
+    }
+
+    section:nth-child(4){
+        div {
+        background-image: url("../img/card.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+    }
+}
+    }
+}
