@@ -27,6 +27,61 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/img/bcard.jpg": {
+		"ft": 16384,
+		"iS": 61242,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/bcard.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/card.jpg": {
+		"ft": 16384,
+		"iS": 65991,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/card.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/creative.jpg": {
+		"ft": 16384,
+		"iS": 20533,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/creative.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/hanging.jpg": {
+		"ft": 16384,
+		"iS": 37820,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/hanging.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/hero.jpg": {
+		"ft": 16384,
+		"iS": 271063,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
