@@ -595,7 +595,7 @@ footer {
   background-color: #EEEEEE;
   margin-bottom: 20px;
   display: grid;
-  grid-template-columns: 20px auto 20px;
+  grid-template-columns: 10px auto 10px;
   grid-template-areas: "bg bg bg" ". text ."; }
   @media (min-width: 768px) {
     #journal div section {
@@ -630,6 +630,9 @@ footer {
   @media (min-width: 576px) {
     #journal div section:nth-child(2) div {
       height: 400px; } }
+  @media (min-width: 768px) {
+    #journal div section:nth-child(2) div {
+      height: 200px; } }
   @media (min-width: 1200px) {
     #journal div section:nth-child(2) div {
       grid-area: bg; } }
@@ -649,6 +652,9 @@ footer {
   @media (min-width: 576px) {
     #journal div section:nth-child(3) div {
       height: 400px; } }
+  @media (min-width: 768px) {
+    #journal div section:nth-child(3) div {
+      height: 200px; } }
 
 @media (min-width: 768px) {
   #journal div section:nth-child(4) {
@@ -667,3 +673,6 @@ footer {
   @media (min-width: 576px) {
     #journal div section:nth-child(4) div {
       height: 400px; } }
+  @media (min-width: 768px) {
+    #journal div section:nth-child(4) div {
+      height: 200px; } }
