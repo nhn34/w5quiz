@@ -1,0 +1,41 @@
+/* =============
+    Base
+============= */
+p,h1,h2,h3,h4,h5,figure{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    li{
+        list-style: none;
+    }
+}
+
+a{
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". content .";
+
+    @include sm {
+        grid-template-columns: 30px auto 30px;
+    }
+
+    .content{
+        grid-area: content;
+    }
+}
+
+.space {
+    padding: 60px 0;
+    @include lg {
+        padding: 90px 0;
+    }
+}
