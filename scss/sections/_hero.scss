@@ -9,18 +9,29 @@
 
     div {
         padding: 74px 0 166px;
-
         text-align: center;
+        @include md {
+            padding: 125px 0 194px;
+        }
         h1 {
             font-family: 'Comfortaa', cursive;
             color: $dark;
             font-size: rem-calc(24);
+
+            @include md {
+                font-size: rem-calc(38);
+                padding-bottom: 24px;
+            }
         }
 
         h2 {
             font-family: 'Comfortaa', cursive;
             color: $light;
             font-size: rem-calc(14);
+            @include md {
+                font-size: rem-calc(25);
+                padding: 0 90px;
+            }
         }
     }
 
@@ -30,6 +41,10 @@
         display: flex;
         justify-content: center;
 
+        @include md {
+            padding-bottom: 147px;
+        }
+
         a {
             font-family: 'Comfortaa', cursive;
         display: inline-block;
@@ -38,6 +53,12 @@
         border: 2.8px solid $white;
         padding: 30px 10px;
         border-radius: 100px;
+
+        @include md {
+            font-size: rem-calc(23);
+            padding: 40px 20px;
+            border-radius: 100px;
+        }
         }
     }
 }

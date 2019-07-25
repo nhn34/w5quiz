@@ -4,7 +4,29 @@
 
 #creative {
     background-color: $grey;
-    padding-bottom: 100px;
+    padding: 55px 0 100px;
+
+    @include md {
+        display: grid;
+        grid-template-columns: 65% auto;
+        grid-template-areas: "text img";
+        padding: 0 0;
+    }
+
+    div:nth-child(1) {
+        @include md {
+            grid-area: text;
+            padding: 30px 45px;
+        }
+    }
+
+    div:nth-child(2) {
+        @include md {
+            grid-area: img;
+            background-image: url("../img/creative.jpg");
+            background-position: center;
+        }
+    }
 
     h1 {
         padding-bottom: 20px;
@@ -16,7 +38,10 @@
 }
 
 #creativehero {
-    background-image: url(../img/creative.jpg);
+    background-image: url("../img/creative.jpg");
     background-size: cover;
     height: 320px;
+    @include md {
+        display: none;
+    }
 }
